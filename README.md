@@ -1,4 +1,4 @@
-# astro-v6-starlight-steps-css-repro
+# astro-v6-slot-css-repro
 
 ## Steps to reproduce
 
