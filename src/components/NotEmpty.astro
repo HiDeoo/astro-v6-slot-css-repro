@@ -1,0 +1,11 @@
+---
+const content = await Astro.slots.render('default');
+
+console.log('🚨 [NotEmpty.astro:4] content', JSON.stringify(content, null, '\t'))
+
+if (!content?.trim()) {
+  throw new Error('This component requires content.');
+}
+---
+
+<Fragment set:html={content} />
